@@ -1,382 +1,268 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>LOFT CITY | Responsive Travel & Tourism Template</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+<html lang="en"><!-- Basic -->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Site Metas -->
+    <title>Yamifood Restaurant - Responsive HTML5 Template</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <!-- Favicons -->
-        <link href="img/favicon.ico" rel="icon">
-        <link href="img/apple-favicon.png" rel="apple-touch-icon">
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">    
+	<!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
 
-        <!-- Vendor CSS File -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="vendor/slick/slick.css" rel="stylesheet">
-        <link href="vendor/slick/slick-theme.css" rel="stylesheet">
-        <link href="vendor/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-        <!-- Main Stylesheet File -->
-        <link href="css/hover-style.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
+</head>
 
-    <body>
-        <!-- Header Section Start -->
-        <header id="header">
-            <a href="index.html" class="logo"><img src="img/pics/newlogo.jpg" alt="logo"></a>
-            <div class="phone"><i class="fa fa-phone"></i>7902208777</div>
-            <div class="mobile-menu-btn"><i class="fa fa-bars"></i></div>
-            <nav class="main-menu top-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="room.html">Packages</a></li>
-                    <li><a href="amenities.html">Amenities</a></li>
-                    <!-- <li><a href="booking.html">Booking</a></li>
-                    <li><a href="login.html">Login</a></li> -->
-                    <li class="active"><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Header Section End -->
-        
-        <!-- Contact Section Start -->
-        <section class="contact-section">
-            <div class="container">
-              <div class="container" style="width: 100%; max-width: 100% !important;">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.332073165098!2d75.1165879!3d12.225780199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba47aee642ea7f3%3A0xe32ef18ddceb4114!2sMadhuvahini%20Houseboat!5e0!3m2!1sen!2sin!4v1729315721349!5m2!1sen!2sin" width=1200" height="450" style="border:0; margin-top: 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              </div>
-      
-              <div class="row">
-                <div class="col-12">
-                  <h2 class="contact-title">Get in Touch</h2>
-                </div>
-                <div
-                  id="successMessage"
-                  style="display: none;"
-                  class="alert alert-success text-center"
-                >
-                  Thank you! Your message has been successfully sent. We will get back
-                  to you soon.
-                </div>
-                <div class="col-lg-8">
-                  <form
-                    class="form-contact contact_form"
-                    action="contact_process.php"
-                    method="post"
-                    id="contactform"
-                    novalidate="novalidate"
-                    
-                  >
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                          <input
-                            class="form-control valid"
-                            name="name"
-                            id="name"
-                            type="text"
-                            required
-                            onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter your name'"
-                            placeholder="Enter your name"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                          <input
-                            class="form-control valid"
-                            name="email"
-                            required
-                            id="email"
-                            type="email"
-                            onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter email address'"
-                            placeholder="Email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-group">
-                          <input
-                            class="form-control"
-                            name="phoneNumber"
-                            required
-                            id="phoneNumber"
-                            type="text"
-                            onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter PhoneNumber'"
-                            placeholder="Enter PhoneNumber"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-group">
-                          <textarea
-                            class="form-control w-100"
-                            name="message"
-                            id="message"
-                            cols="30"
-                            rows="9"
-                            onfocus="this.placeholder = ''"
-                            onblur="this.placeholder = 'Enter Message'"
-                            required
-                            placeholder="Enter Message"
-                          ></textarea>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group mt-3">
-                      <button style="background-color: black; color: white;"
-                        type="submit"
-                        id="s-btn"
-                        class="button button-contactForm boxed-btn"
-                      >
-                        Send
-                      </button>
-                    </div>
-                    <div class="form-group mt-3">
-                      <button
-                        type="submit"
-                        class="button button-contactForm boxed-btn"
-                        id="loading"
-                        style="display: none;"
-                      >
-                        Submitting...
-                      </button>
-                    </div>
-                  </form>
-                </div>
-                <div class="col-lg-3 offset-lg-1">
-                  <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-home"></i></span>
-                    <div class="media-body">
-                      <h3>Madhuvahini HOUSE BOAT</h3>
-                      <p>
-                        Purathe kai, thaikkadapuram, Nileswaram, kasaragod 
-                    </p>
-                    </div>
-                  </div>
-                  <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                    <div class="media-body">
-                      <h3>7902208777</h3>
-                      <p>9947472618</p>
-                    </div>
-                  </div>
-                  <div class="media contact-info">
-                    <span class="contact-info__icon"><i class="ti-email"></i></span>
-                    <div class="media-body">
-                      <h3>manimelbare@gmail.com</h3>
-                      <p>Send your enquiry anytime!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        <!-- Contact Section End -->
-        
-        <!-- Footer Section Start -->
-        <div id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="social">
-                            <a href="https://www.instagram.com/houseboat_madhuvahini?igsh=MWI1aDEzamw4aW5iOA==
-                            "><li class="fa fa-instagram"></li></a>
-                            <!-- <a href=""><li class="fa fa-twitter"></li></a> -->
-                            <a href="https://www.facebook.com/share/5LRz1ioouCEJRvDh/?mibextid=qi2Omg
-                            "><li class="fa fa-facebook-f"></li></a>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <ul>
-                            <li><a href="./home.html">Home</a></li>
-                            <li><a href="./room.html">Packages</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="./amenities.html">Amenities</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12">
-                        <p>Copyright &#169; <a href="https://auxxweb.in">Auxxweb</a> All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Section End -->
-        
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<body>
+	<!-- Start header -->
+	<header class="top-navbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-rs-food" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbars-rs-food">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+						<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Pages</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="reservation.html">Reservation</a>
+								<a class="dropdown-item" href="stuff.html">Stuff</a>
+								<a class="dropdown-item" href="gallery.html">Gallery</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Blog</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown-a">
+								<a class="dropdown-item" href="blog.html">blog</a>
+								<a class="dropdown-item" href="blog-details.html">blog Single</a>
+							</div>
+						</li>
+						<li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	
+	<!-- Start All Pages -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Contact</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End All Pages -->
+	
+	<!-- Start Contact -->
+	<div class="map-full"></div>
+	<div class="contact-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Contact</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<form id="contactForm">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-error="Please enter your name">
+									<div class="help-block with-errors"></div>
+								</div>                                 
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+									<div class="help-block with-errors"></div>
+								</div> 
+							</div>
+							<div class="col-md-12">
+								<div class="form-group">
+									<select class="custom-select d-block form-control" id="guest" required data-error="Please Select Person">
+									  <option disabled selected>Please Select Person*</option>
+									  <option value="1">1</option>
+									  <option value="2">2</option>
+									  <option value="3">3</option>
+									  <option value="4">4</option>
+									  <option value="5">5</option>
+									</select>
+									<div class="help-block with-errors"></div>
+								</div> 
+							</div>
+							<div class="col-md-12">
+								<div class="form-group"> 
+									<textarea class="form-control" id="message" placeholder="Your Message" rows="4" data-error="Write your message" required></textarea>
+									<div class="help-block with-errors"></div>
+								</div>
+								<div class="submit-button text-center">
+									<button class="btn btn-common" id="submit" type="submit">Send Message</button>
+									<div id="msgSubmit" class="h3 text-center hidden"></div> 
+									<div class="clearfix"></div> 
+								</div>
+							</div>
+						</div>            
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact -->
+	
+	<!-- Start Contact info -->
+	<div class="contact-imfo-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<i class="fa fa-volume-control-phone"></i>
+					<div class="overflow-hidden">
+						<h4>Phone</h4>
+						<p class="lead">
+							+01 123-456-4590
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-envelope"></i>
+					<div class="overflow-hidden">
+						<h4>Email</h4>
+						<p class="lead">
+							yourmail@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<i class="fa fa-map-marker"></i>
+					<div class="overflow-hidden">
+						<h4>Location</h4>
+						<p class="lead">
+							800, Lorem Street, US
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact info -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>About Us</h3>
+					<p>Integer cursus scelerisque ipsum id efficitur. Donec a dui fringilla, gravida lorem ac, semper magna. Aenean rhoncus ac lectus a interdum. Vivamus semper posuere dui, at ornare turpis ultrices sit amet. Nulla cursus lorem ut nisi porta, ac eleifend arcu ultrices.</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Opening hours</h3>
+					<p><span class="text-color">Monday: </span>Closed</p>
+					<p><span class="text-color">Tue-Wed :</span> 9:Am - 10PM</p>
+					<p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+					<p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Contact information</h3>
+					<p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p>
+					<p class="lead"><a href="#">+01 2000 800 9999</a></p>
+					<p><a href="#"> info@admin.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Subscribe</h3>
+					<div class="subscribe_form">
+						<form class="subscribe_form">
+							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+							<button type="submit" class="submit">SUBSCRIBE</button>
+							<div class="clearfix"></div>
+						</form>
+					</div>
+					<ul class="list-inline f-social">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">All Rights Reserved. &copy; 2018 <a href="#">Yamifood Restaurant</a> Design By : 
+					<a href="https://html.design/">html design</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
 
-        <!-- Vendor JavaScript File -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/jquery/jquery-migrate.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="vendor/easing/easing.min.js"></script>
-        <script src="vendor/stickyjs/sticky.js"></script>
-        <script src="vendor/superfish/hoverIntent.js"></script>
-        <script src="vendor/superfish/superfish.min.js"></script>
-        <script src="vendor/wow/wow.min.js"></script>
-        <script src="vendor/slick/slick.min.js"></script>
-        <script src="vendor/tempusdominus/js/moment.min.js"></script>
-        <script src="vendor/tempusdominus/js/moment-timezone.min.js"></script>
-        <script src="vendor/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-        
-        <!-- Contact Javascript File -->
-        <script src="js/jqBootstrapValidation.min.js"></script>
-        <script src="js/contact.js"></script>
-        
-        <!-- Main Javascript File -->
-        <script src="js/main.js"></script>
-
-        <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-
-    <script src="js/main.js"></script>
-    <script>
-      $('#datepicker').datepicker({
-        iconsLibrary: 'fontawesome',
-        icons: {
-          rightIcon: '<span class="fa fa-caret-down"></span>',
-        },
-      })
-      $('#datepicker2').datepicker({
-        iconsLibrary: 'fontawesome',
-        icons: {
-          rightIcon: '<span class="fa fa-caret-down"></span>',
-        },
-      })
-    </script>
-    <!-- <script>
-      $(document).ready(function () {
-        $('#contactform').submit((e) => {
-          e.preventDefault()
-
-          const loading = document.getElementById('loading')
-          const btn = document.getElementById('s-btn')
-          const successMessage = document.getElementById('successMessage') // Updated ID
-
-          loading.style.display = 'block'
-          btn.style.display = 'none'
-
-          $.ajax({
-            url:
-              'https://script.google.com/macros/s/AKfycbyH6foigFQ6qbqTUmIFdKD7UqxGi5pgH8EmNKP2-ZwYHhmf_Qq9hfnJ1JyEBcUvRuzl/exec',
-            data: $('#contactform').serialize(),
-            method: 'post',
-            success: function (response) {
-              if (successMessage) {
-                successMessage.style.display = 'block' // Show success message
-              }
-              // Clear form fields
-              $('#contactform')[0].reset()
-
-              btn.style.display = 'block'
-              loading.style.display = 'none'
-            },
-            error: function (err) {
-              loading.style.display = 'none'
-              btn.style.display = 'block'
-              alert('Something went wrong. Please try again.')
-            },
-          })
-        })
-      })
-    </script> -->
-    <script>
-      $(document).ready(function () {
-        $('#contactform1').submit((e) => {
-          e.preventDefault()
-
-          const loading = document.getElementById('loading1')
-          const btn = document.getElementById('s-btn1')
-          const successMessage = document.getElementById('successMessage1') // Updated ID
-
-          loading.style.display = 'block'
-          btn.style.display = 'none'
-
-          $.ajax({
-            url:
-              'https://script.google.com/macros/s/AKfycbyH6foigFQ6qbqTUmIFdKD7UqxGi5pgH8EmNKP2-ZwYHhmf_Qq9hfnJ1JyEBcUvRuzl/exec',
-            data: $('#contactform1').serialize(),
-            method: 'post',
-            success: function (response) {
-              if (successMessage) {
-                successMessage.style.display = 'block' // Show success message
-              }
-              // Clear form fields
-              $('#contactform1')[0].reset()
-
-              btn.style.display = 'block'
-              loading.style.display = 'none'
-            },
-            error: function (err) {
-              loading.style.display = 'none'
-              btn.style.display = 'block'
-              alert('Something went wrong. Please try again.')
-            },
-          })
-        })
-      })
-    </script>
-    <script>
-      $(document).ready(function () {
-        $('#contactform').submit((e) => {
-          e.preventDefault()
-    
-          // Validation
-          const name = $('#name').val().trim();
-          const email = $('#email').val().trim();
-          const phoneNumber = $('#phoneNumber').val().trim();
-          const message = $('#message').val().trim();
-    
-          // Check if all fields have values
-          if (!name || !email || !phoneNumber || !message) {
-            alert('Please fill in all fields.');
-            return;
-          }
-    
-          const loading = document.getElementById('loading');
-          const btn = document.getElementById('s-btn');
-          const successMessage = document.getElementById('successMessage');
-    
-          loading.style.display = 'block';
-          btn.style.display = 'none';
-    
-          $.ajax({
-            url:
-              'https://script.google.com/macros/s/AKfycbyH6foigFQ6qbqTUmIFdKD7UqxGi5pgH8EmNKP2-ZwYHhmf_Qq9hfnJ1JyEBcUvRuzl/exec',
-            data: $('#contactform').serialize(),
-            method: 'post',
-            success: function (response) {
-              if (successMessage) {
-                successMessage.style.display = 'block';
-              }
-    
-              // Clear form fields
-              $('#contactform')[0].reset();
-    
-              btn.style.display = 'block';
-              loading.style.display = 'none';
-            },
-            error: function (err) {
-              loading.style.display = 'none';
-              btn.style.display = 'block';
-              alert('Something went wrong. Please try again.');
-            },
-          });
-        });
-      });
-    </script>    
-    </body>
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/jquery.mapify.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+	<script>
+		$('.map-full').mapify({
+			points: [
+				{
+					lat: 40.7143528,
+					lng: -74.0059731,
+					marker: true,
+					title: 'Marker title',
+					infoWindow: 'Yamifood Restaurant'
+				}
+			]
+		});	
+	</script>
+</body>
 </html>
