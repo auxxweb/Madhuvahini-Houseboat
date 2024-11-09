@@ -335,41 +335,42 @@
 	<script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
-	<script>
-		$(document).ready(function () {
-			$('#newsletterForm').submit((e) => {
-				e.preventDefault()
+    <script>
+	$(document).ready(function () {
+		$('#newsletterForm').submit((e) => {
+			e.preventDefault()
 
-				const loading = document.getElementById('loading1')
-				const btn = document.getElementById('s-btn1')
-				const successMessage = document.getElementById('successMessage1') // Updated ID
+			const loading = document.getElementById('loading1')
+			const btn = document.getElementById('s-btn1')
+			const successMessage = document.getElementById('successMessage1') // Updated ID
 
-				loading.style.display = 'block'
-				btn.style.display = 'none'
+			loading.style.display = 'block'
+			btn.style.display = 'none'
 
-				$.ajax({
-					url:
-						'https://script.google.com/macros/s/AKfycbxwwB0xZw2WmIYPQMmZ98-mBcM-GlXCFz1XRisCgxZbVnIzV4PGuWTXPXO5y4CGQXA5/exec',
-					data: $('#contactform1').serialize(),
-					method: 'post',
-					success: function (response) {
-						if (successMessage) {
-							successMessage.style.display = 'block' // Show success message
-						}
-						// Clear form fields
-						$('#newsletterForm')[0].reset()
+			$.ajax({
+				url:
+					'https://script.google.com/macros/s/AKfycbwlfTfzxoBjJkXQGb4TV5sOcJbqci0wzMi5gMGGCL6--pYDy6dX_cRIW0kX0bE_dj79aw/exec',
+				data: $('#newsletterForm').serialize(),
+				method: 'post',
+				success: function (response) {
+					if (successMessage) {
+						successMessage.style.display = 'block' // Show success message
+					}
+					// Clear form fields
+					$('#newsletterForm')[0].reset()
 
-						btn.style.display = 'block'
-						loading.style.display = 'none'
-					},
-					error: function (err) {
-						loading.style.display = 'none'
-						btn.style.display = 'block'
-						alert('Something went wrong. Please try again.')
-					},
-				})
+					btn.style.display = 'block'
+					loading.style.display = 'none'
+				},
+				error: function (err) {
+					loading.style.display = 'none'
+					btn.style.display = 'block'
+					
+					alert('Something went wrong. Please try again.')
+				},
 			})
 		})
-	</script>
+	})
+</script>
 </body>
 </html>
